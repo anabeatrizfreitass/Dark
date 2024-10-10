@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de Pagamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="pix"],
+        input[type="boleto"],
+        input[type="cartão de crédito"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #363636;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #DCDCDC;
+        }
+
+			img{
+			
+			width: 10%;
+			height:25px;
+        
+
+		}
+
+		.container2 {
+            max-width: 450px;
+            margin: auto;
+            background: #DCDCDC;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+      div.principal{
+        width:100%;
+         }
+
+        div.principal div {
+            width:100%;
+            float:left;
+
+         }
+
+
+    </style>
+</head>
+<body>
+		<div class="container">
+    <h1>Formas de Pagamento</h1>
+
+
+		
+	<h3>Boleto bancário</h3>
+	
+ <div class="payment-method">
+       <div class="principal">
+    <fieldset>    
+<input type="radio" id="po" name="function" value="boleto">
+		<label for="po">boleto</label><br>
+        <div>
+            <img src="./boleto.png" alt="boleto">
+            </div>
+       
+    </div>
+       
+           
+        </div>
+</fieldset>
+
+    
+        <div class="payment-method">
+          
+		
+		<h3>depósito online</h3>
+		
+
+<div class="payment-method">
+<fieldset>
+            <input type="radio" id="po" name="function" value="paypal">
+		<label for="po">paypal</label><br>
+
+<img src="../projeto/paypal.png" alt="paypal">
+</fieldset>
+          
+        </div>
+<fieldset>
+	<input type="radio" id="po" name="function" value="visa">
+		<label for="po">visa</label><br>
+		 <img src="../projeto/visa.png" alt="visa"> 
+<label for="project">parcelamento:</label>
+		<select id="project name="parcelas">
+			<option value="1">1x de 1.600</option>
+			<option value="2">2x de 800</option>
+			<option value="3">3x de 533,33</option>
+			<option value="4">4x de 400</option>
+			<option value="5">5x de 320</option>
+			<option value="6">6x de 266,66</option>
+			<option value="7">7x de 228,57</option>
+			<option value="8">8x de 200</option>
+			<option value="9">9x de 177,77</option>
+			<option value="10">10x de 160</option>
+			<option value="11">11x de 145,45</option>
+			<option value="12">12x de 133,33</option>
+
+
+			</select><br><br>
+</fieldset>
+        </div>
+		
+        <div class="payment-method">
+<fieldset>
+
+            <input type="radio" id="po" name="function" value="mastercard">
+		<label for="po">mastercard</label><br>
+<img src="../projeto/mastercard.png" alt="mastercard">
+			<label for="project">parcelamento:</label>
+		<select id="project name="parcelas">
+			<option value="1">1x de 1.600</option>
+			<option value="2">2x de 800</option>
+			<option value="3">3x de 533,33</option>
+			<option value="4">4x de 400</option>
+			<option value="5">5x de 320</option>
+			<option value="6">6x de 266,66</option>
+			<option value="7">7x de 228,57</option>
+			<option value="8">8x de 200</option>
+			<option value="9">9x de 177,77</option>
+			<option value="10">10x de 160</option>
+			<option value="11">11x de 145,45</option>
+			<option value="12">12x de 133,33</option>
+
+
+			</select><br><br>
+
+            </fieldset>
+        </div>
+        <div class="payment-method">
+<fieldset>
+
+          <input type="radio" id="po" name="function" value="americanexpress">
+		<label for="po">americanexpress</label><br>
+<img src="../projeto/americanexpress.png" alt="americanexpress">
+		<label for="project">parcelamento:</label>
+		<select id="project name="parcelas">
+			<option value="1">1x de 1.600</option>
+			<option value="2">2x de 800</option>
+			<option value="3">3x de 533,33</option>
+			<option value="4">4x de 400</option>
+			<option value="5">5x de 320</option>
+			<option value="6">6x de 266,66</option>
+			<option value="7">7x de 228,57</option>
+			<option value="8">8x de 200</option>
+			<option value="9">9x de 177,77</option>
+			<option value="10">10x de 160</option>
+			<option value="11">11x de 145,45</option>
+			<option value="12">12x de 133,33</option>
+
+
+			</select><br><br>
+
+           </fieldset>
+        </div>
+       
+       
+    </div>
+
+</body>
+</html>
