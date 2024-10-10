@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark - Suporte ao Cliente</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f1f1f1;
+        }
+
+        .contact-info {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        form {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        form textarea {
+            height: 100px;
+        }
+
+        form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4a4a4a;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #6a6a6a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Suporte ao Cliente - Dark</h1>
+
+        <div class="contact-info">
+            <h2>Informações de Contato</h2>
+            <p>Email: suporte@dark.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Endereço: Rua das Sombras, 123, Cidade Escura, BR</p>
+            <p>Horário de atendimento: Segunda a Sexta, das 9h às 18h</p>
+        </div>
+
+        <form action="suporte" method="post">
+            <h2>Entre em Contato Conosco</h2>
+            <input type="text" name="nome" placeholder="Seu Nome" required><br>
+            <input type="email" name="email" placeholder="Seu Email" required><br>
+            <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea><br>
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </div>
+</body>
+</html>
