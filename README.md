@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações do Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color:aliceblue;
+            background-color:black;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+        .ratings-overview, .ratings-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .ratings-overview .bars {
+            flex-grow: 1;
+        }
+        .bars div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .bars div span {
+            margin-right: 10px;
+            width: 30px;
+            text-align: right;
+        }
+        .bars div .bar {
+            height: 8px;
+            background-color: lightgray;
+            width: 70%;
+            margin-left: 10px;
+            position: relative;
+        }
+        .bars div .bar span {
+            background-color: rgb(236, 113, 236);
+            display: block;
+            height: 100%;
+            position: absolute;
+        }
+        .ratings-details {
+            margin-top: 30px;
+        }
+        .rating-category {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .review-box {
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .review-header span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div><h2>Avaliações</h2></div>
+          
+        </div>
+
+        <div class="ratings-overview">
+            <div class="bars">
+                <div>
+                    <span>5 ★</span>
+                    <div class="bar"><span style="width: 80%;"></span></div> <span>147</span>
+                </div>
+                <div>
+                    <span>4 ★</span>
+                    <div class="bar"><span style="width: 15%;"></span></div> <span>21</span>
+                </div>
+                <div>
+                    <span>3 ★</span>
+                    <div class="bar"><span style="width: 2%;"></span></div> <span>5</span>
+                </div>
+                <div>
+                    <span>2 ★</span>
+                    <div class="bar"><span style="width: 1%;"></span></div> <span>2</span>
+                </div>
+                <div>
+                    <span>1 ★</span>
+                    <div class="bar"><span style="width: 1%;"></span></div> <span>3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="ratings-details">
+            <div>
+                <h3>Classificação média do produto</h3>
+                <div class="rating-category">
+                    <span>Geral</span> <span>4.7 ★★★★★</span>
+                </div>
+                <div class="rating-category">
+                    <span>Funcionalidades</span> <span>4.0 ★★★★☆</span>
+                </div>
+                <div class="rating-category">
+                    <span>Performance</span> <span>5.0 ★★★★★</span>
+                </div>
+                <div class="rating-category">
+                    <span>Valor do produto</span> <span>4.0 ★★★★☆</span>
+                </div>
+                <div class="rating-category">
+                    <span>Qualidade do produto</span> <span>5.0 ★★★★★</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-box">
+            <div class="review-header">
+                <span>Júlia</span> <span>20 dias atrás</span>
+            </div>
+            <p><strong>Sensacional!</strong></p>
+            <p>tecido de qualidade,parece muito o do anúncio.</p>
+        </div>
+
+        <div class="review-box">
+            <div class="review-header">
+                <span>Bruna</span> <span>5 meses atrás</span>
+            </div>
+            <p><strong>Valor elevado pelo que entrega</strong></p>
+            <p>Notei um pouco de transparência no tecido como se fosse velho.Não recomendo</p>
+        </div>
+
+    </div>
+</body>
+</html>
