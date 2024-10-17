@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notificações de Promoções - Dark</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #e600e6;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .promo-notification {
+            background-color: #2e2e2e;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            text-align: center;
+        }
+        .promo-notification h2 {
+            color: #e600e6;
+            margin-bottom: 20px;
+        }
+        .promo-notification p {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .promo-notification input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #444;
+            color: #fff;
+        }
+        .promo-notification input[type="submit"] {
+            background-color: #e600e6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .promo-notification input[type="submit"]:hover {
+            background-color: #b300b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dark</h1>
+    </header>
+
+    <main>
+        <div class="promo-notification">
+            <h2>Cadastre-se para Notificações de Promoções</h2>
+            <p>Fique por dentro das últimas promoções, lançamentos e ofertas exclusivas da <strong>Dark</strong>.</p>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dark - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
