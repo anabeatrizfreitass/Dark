@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - DARK</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: pink;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid pink;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .cart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 20, 147, 0.2);
+            border: 2px solid pink;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .cart-item-details {
+            flex: 1;
+        }
+        .cart-item h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .cart-item p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .coupon-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 20, 147, 0.3);
+            padding: 20px;
+            border: 2px solid pink;
+            border-radius: 10px;
+            width: 80%;
+        }
+        .coupon-container input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 70%;
+        }
+        .coupon-container button {
+            background-color: pink;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .coupon-container button:hover {
+            background-color: rgba(255, 20, 147, 0.8);
+        }
+        .total {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid pink;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Carrinho de Compras</h1>
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-item">
+            <img src="blusa.png" alt="Produto 1">
+            <div class="cart-item-details">
+                <h2> Blusa Top</h2>
+                <p>29,90</p>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="blusa2.png" alt=" Produto 2">
+            <div class="cart-item-details">
+                <h2> Blusa Top</h2>
+                <p>R$ 25,00</p>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="blusa3.png" alt="Produto 3">
+            <div class="cart-item-details">
+                <h2>Blusa Top</h2>
+                <p>R$ 25,00</p>
+            </div>
+        </div>
+
+       <div class="cart-item">
+            <img src="Short Feminino.png" alt="Produto 3">
+            <div class="cart-item-details">
+                <h2>Short Feminino</h2>
+                <p>R$ 35,90</p>
+            </div>
+        </div>
+
+       <div class="cart-item">
+            <img src="Short Feminino2.png" alt="Produto 3">
+            <div class="cart-item-details">
+                <h2>Short Feminino</h2>
+                <p>R$ 35,90</p>
+            </div>
+        </div>
+
+       <div class="cart-item">
+            <img src="regata.png" alt="Produto 3">
+            <div class="cart-item-details">
+                <h2>3 Regatas</h2>
+                <p>R$ 50,00</p>
+            </div>
+        </div>
+
+       <div class="cart-item">
+            <img src="conjunto Regatas.png" alt="Produto 3">
+            <div class="cart-item-details">
+                <h2>Conjunto Regatas</h2>
+                <p>R$ 55,00</p>
+            </div>
+        </div>
+
+
+      <div class="cart-item">
+            <img src="Calça feminina.png" alt="Produto 3">
+            <div class="cart-item-details">
+                <h2>Calça feminina.png</h2>
+                <p>R$ 65,00</p>
+            </div>
+        </div>
+
+      <div class="cart-item">
+            <img src="Blusa de manga longa.png" alt="Produto 3">
+            <div class="cart-item-details">
+                <h2>Blusa de Manga Longa.png</h2>
+                <p>R$ 55,00</p>
+            </div>
+        </div>
+
+
+        <div class="coupon-container">
+            <h2>Aplique seu código de cupom</h2>
+            <input type="text" placeholder="Digite seu código">
+            <button onclick="applyCoupon()">Aplicar Cupom</button>
+            <p id="coupon-message"></p>
+        </div>
+
+        <div class="total">
+            Total: R$ 309,97
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DARK - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function applyCoupon() {
+            const couponInput = document.querySelector('input[type="text"]');
+            const message = document.getElementById('coupon-message');
+
+            // Simulando códigos de cupom válidos
+            const validCoupons = {
+                "DARK10": 10,
+                "DARK15": 15,
+                "DARK20": 20
+            };
+
+            const discount = validCoupons[couponInput.value];
+            if (discount) {
+                const totalElement = document.querySelector('.total');
+                const totalText = totalElement.textContent;
+                const totalAmount = parseFloat(totalText.replace('Total: R$ ', '').replace(',', '.'));
+
+                const discountAmount = (totalAmount * discount) / 100;
+                const newTotal = totalAmount - discountAmount;
+
+                totalElement.textContent = `Total: R$ ${newTotal.toFixed(2).replace('.', ',')}`;
+                message.textContent = `Cupom aplicado! Você ganhou ${discount}% de desconto!`;
+                message.style.color = 'green';
+            } else {
+                message.textContent = 'Código de cupom inválido!';
+                message.style.color = 'red';
+            }
+
+            couponInput.value = '';
+        }
+    </script>
+
+</body>
+</html>
