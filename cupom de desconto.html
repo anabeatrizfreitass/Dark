@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupons de Desconto - DARK</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: pink;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid pink;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .coupons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .coupon {
+            background-color: rgba(255, 20, 147, 0.2);
+            border: 2px solid pink;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .coupon:hover {
+            transform: translateY(-5px);
+        }
+        .coupon h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        .coupon p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .coupon button {
+            background-color: pink;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .coupon button:hover {
+            background-color: rgba(255, 20, 147, 0.8);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cupons de Desconto DARK</h1>
+        <p>Descontos imperdíveis para você!</p>
+    </header>
+
+    <div class="coupons">
+        <div class="coupon">
+            <h2>10% OFF</h2>
+            <p>Use o código: <strong>DARK10</strong></p>
+            <button>Copiar Código</button>
+        </div>
+        <div class="coupon">
+            <h2>15% OFF</h2>
+            <p>Use o código: <strong>DARK15</strong></p>
+            <button>Copiar Código</button>
+        </div>
+        <div class="coupon">
+            <h2>20% OFF</h2>
+            <p>Use o código: <strong>DARK20</strong></p>
+            <button>Copiar Código</button>
+        </div>
+        <div class="coupon">
+            <h2>Frete Grátis</h2>
+            <p>Use o código: <strong>FRETEGRATIS</strong></p>
+            <button>Copiar Código</button>
+        </div>
+        <div class="coupon">
+            <h2>30% OFF na 1ª Compra</h2>
+            <p>Use o código: <strong>PRIMEIRA30</strong></p>
+            <button>Copiar Código</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DARK - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
